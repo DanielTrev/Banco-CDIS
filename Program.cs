@@ -26,7 +26,7 @@ int c_total = 0, m_total = 0;
 while (true)
 {
     Console.WriteLine("        -----                                                                           -----\n");
-    Console.WriteLine("        ---           1.Ingresar la cantidad de retiros hechos por los usuarios.          ---\n");
+    Console.WriteLine("        ---                         1.Ingresar la cantidad de retiros                     ---\n");
     Console.WriteLine("        -----                                                                           -----\n");
     Console.WriteLine("        -------------------------------------------------------------------------------------");
     Console.WriteLine("        -----                                                                           -----\n");
@@ -64,7 +64,7 @@ while (true)
                     Console.WriteLine("        -----                                                                           -----\n");
                     Console.WriteLine("        -------------------------------------------------------------------------------------\n");
                     Console.WriteLine("        -----                                                                           -----\n");
-                    Console.WriteLine("\n        ---                        ¿Cuantos retiros se realizaran {0}?:                     --- ", i + 1);
+                    Console.WriteLine("\n        ---                                     Retiro {0}:                             --- ", i + 1);
                     Console.WriteLine("        -----                                                                           -----\n");
                     Console.WriteLine("        -------------------------------------------------------------------------------------\n");
                 
@@ -81,7 +81,7 @@ while (true)
                     else
                     {
                   
-                        Console.WriteLine("\n1.La cantidad de retiro debe ser como maximo 50,000.\n2.La cantidad debe ser entera y positiva.");
+                        Console.WriteLine("\n1.El retiro no puede ser mayor a 50000 ni puede ser negativa.");
                         i--;
                     }
 
@@ -146,8 +146,21 @@ while (true)
 
                 Console.WriteLine("        -----                                                                           -----\n");
                 Console.WriteLine("        ---                                      Retiro {0}                                 --- ", i + 1);
+                Console.WriteLine("        -----                                                                           -----\n");
                 Console.WriteLine("        ---                              Billetes Dispensados: {0}                          --- ", c_total);
+                Console.WriteLine("        -----                                                                           -----\n");
+                Console.WriteLine($"        -----                   Cantidad de Billetes de (500): {c1}                        -----\n");
+                Console.WriteLine($"        -----                   Cantidad de Billetes de (200): {c2}                        -----\n");
+                Console.WriteLine($"        -----                   Cantidad de Billetes de (100): {c3}                        -----\n");
+                Console.WriteLine($"        -----                   Cantidad de Billetes de (50):  {c4}                        -----\n");
+                Console.WriteLine($"        -----                   Cantidad de Billetes de (20):  {c5}                        -----\n");
+                Console.WriteLine("        -----                                                                           -----\n");
+
+
                 Console.WriteLine("        ---                              Monedas Dispensadas:  {0}                          --- \n",m_total);
+                Console.WriteLine($"        -----                    Cantidad de Monedas de (10): {m1}                         -----\n"); 
+                Console.WriteLine($"        -----                    Cantidad de Monedas de (5):  {m2}                         -----\n");
+                Console.WriteLine($"        -----                    Cantidad de Monedas de (1):  {m3}                         -----\n");
                 Console.WriteLine("        -----                                                                           -----\n");
             }
             Console.WriteLine("        -------------------------------------------------------------------------------------");
